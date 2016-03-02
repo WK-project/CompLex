@@ -8,6 +8,26 @@ html {
 }
 
 body {
-  background: #fff;
+  background-color: #f2f2f2;
+  font-family: 'Ariel', sans-serif;
+  font-size: 12px;
+  color: #474747;
+  font-weight: normal;
+  padding: 0;
+  margin: 0;
+}
 
+.wrapper {
+  margin: 0 auto;
+  position: relative;
+  width: 940px;
+}
+
+.header {
+  background-color: #fff;
+}
+
+
+.footer {
+  background-color: #757575;
 }
