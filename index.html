@@ -4,6 +4,7 @@
   <title>CompLex Kiadó</title>
   <meta charset="utf-8">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
@@ -13,15 +14,22 @@
           <div class="search_box">
             <ul class="sphere">
               <li>
-                <a href="#">EN</a>
+                <a href="#">en</a>
               </li>
               <li>
-                <a href="#">akadály</a>
+                <a href="#">de</a>
               </li>
             </ul>
             <form method="post" action="index.html" enctype="multipart/form-data" class="box">
-              <button class="blue_button">Keresés</button>
-              <input type="text" name="search_field" placeholder="Írja be a keresendő kifejezést!">
+              <fieldset>
+                <label>
+                  <span class="blue_button">Keresés</span>
+                  <input class="field" type="text" name="search_field" placeholder="Írja be a keresendő kifejezést!">
+                  <button>
+                    <i class="fa fa-search"></i>
+                  </button>
+                </label>
+              </fieldset>
             </form>
           </div>
           <h1>CompLex Kiadó Kft.</h1>
@@ -38,7 +46,7 @@
           </ul>
           <ul class="menu">
             <li>
-              <a href="#">Termékek, szolgáltatások</a>
+                <a href="#">Termékek, szolgáltatások</a>
             </li>
             <li>
               <a href="#">Rólunk</a>

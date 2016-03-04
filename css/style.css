@@ -9,7 +9,7 @@ html {
 
 body {
   background-color: #f2f2f2;
-  font-family: 'Ariel', sans-serif;
+  font-family: ariel, sans-serif;
   font-size: 12px;
   color: #474747;
   font-weight: normal;
@@ -22,12 +22,174 @@ body {
   position: relative;
   width: 940px;
 }
+/*Header*/
+.logo {
+  padding-top: 15px;
+}
 
 .header {
   background-color: #fff;
 }
 
+.header ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 
+.header ul li {
+  display: inline-block;
+}
+
+.header .search_box {
+  position: absolute;
+  right: 0;
+  top: 4px;
+}
+
+.search_box .sphere {
+  float: right;
+  padding-bottom: 15px;
+}
+
+.search_box .sphere li a {
+  border-radius: 100%;
+  background-color: #0768a9;
+  color: #fff;
+  font-size: 10px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 4px;
+}
+
+.search_box .sphere li a:hover {
+  background-color: #dae8f2;
+  color: #0768a9;
+}
+
+.search_box form.box {
+  clear: right;
+}
+
+.search_box fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.search_box .blue_button {
+  background-color: #0768a9;
+  color: white;
+  border: 0;
+  border-radius: 5px 0 0 5px;
+  padding: 5px 10px;
+  text-transform: uppercase;
+  text-shadow: black 0 1px;
+  margin-right: -4px;
+}
+
+.search_box .blue_button::after {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 7px 0 7px 9px;
+  border-color: transparent transparent transparent #0768a9;
+  content: "";
+  display: block;
+  position: absolute;
+  left: 75px;
+  top: 5px;
+}
+
+.search_box .field {
+  background-color: #dae8f2;
+  color: #0768a9;
+  border: 0;
+  font-style: italic;
+  padding: 5px 5px 5px 12px;
+  margin-right: -4px;
+  width: 185px
+}
+
+
+.search_box button {
+  background-color: #dae8f2;
+  border: 0;
+  line-height: 22px;
+  color: #afa9ad;
+}
+
+.search_box button:hover {
+  color: #0768a9;
+}
+
+.logo h1 {
+  background-image: url(../images/CompLex_logo.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left center;
+  margin: 0;
+  padding-bottom: 30px;
+  overflow: hidden;
+  text-indent: 110%;
+  white-space: nowrap;
+}
+
+.header .navigation {
+  margin-top: 25px;
+  padding-bottom: 5px;
+}
+
+.header .navigation .other {
+  float: right;
+}
+
+.navigation .other a {
+  text-decoration: none;
+  color: #757575;
+  margin-left: 15px;
+}
+
+.navigation .other a:hover {
+  color: #0768a9;
+}
+
+.navigation .other li:first-child a::after {
+  content: "\007C";
+  color: #757575;
+  margin-left: 15px;
+}
+
+.navigation .menu {
+  padding-left: 50px;
+}
+
+.navigation .menu li {
+  padding-right: 15px;
+}
+
+
+.navigation .menu a {
+  font-family: trebuchet ms, sans-serif;
+  font-size: 14px;
+  text-decoration: none;
+  color: #757575;
+  text-transform: uppercase;
+}
+
+.navigation .menu a:hover {
+  color: #0768a9;
+}
+
+
+
+
+/*Main*/
+
+
+
+/*Footer*/
 .footer {
   background-color: #757575;
 }
