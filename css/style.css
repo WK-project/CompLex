@@ -9,7 +9,7 @@ html {
 
 body {
   background-color: #f2f2f2;
-  font-family: ariel, sans-serif;
+  font-family: 'Ariel', sans-serif;
   font-size: 12px;
   color: #474747;
   font-weight: normal;
@@ -37,9 +37,9 @@ body {
   padding: 0;
 }
 
-.header ul li {
+/*.header ul li {
   display: inline-block;
-}
+}*/
 
 .header .search_box {
   position: absolute;
@@ -50,6 +50,10 @@ body {
 .search_box .sphere {
   float: right;
   padding-bottom: 15px;
+}
+
+.search_box .sphere li {
+  display: inline-block;
 }
 
 .search_box .sphere li a {
@@ -83,6 +87,7 @@ body {
   color: white;
   border: 0;
   border-radius: 5px 0 0 5px;
+  font-family: 'Trebuchet MS', sans-serif;
   padding: 5px 10px;
   text-transform: uppercase;
   text-shadow: black 0 1px;
@@ -98,7 +103,7 @@ body {
   content: "";
   display: block;
   position: absolute;
-  left: 75px;
+  left: 61px;
   top: 5px;
 }
 
@@ -137,12 +142,17 @@ body {
 }
 
 .header .navigation {
-  margin-top: 25px;
-  padding-bottom: 5px;
+  margin-top: 20px;
+  height: 25px;
 }
 
 .header .navigation .other {
   float: right;
+  line-height: 25px;
+}
+
+.header .navigation .other li {
+  display: inline;
 }
 
 .navigation .other a {
@@ -162,34 +172,44 @@ body {
 }
 
 .navigation .menu {
-  padding-left: 50px;
+  padding-left: 40px;
 }
 
 .navigation .menu li {
   padding-right: 15px;
+  float: left;
 }
 
-
-.navigation .menu a {
-  font-family: trebuchet ms, sans-serif;
+.navigation .menu li a {
+  font-family: 'Trebuchet MS', sans-serif;
   font-size: 14px;
   text-decoration: none;
   color: #757575;
+  padding: 5px 10px;
   text-transform: uppercase;
+  display: block;
 }
 
-.navigation .menu a:hover {
-  color: #0768a9;
+.navigation .menu li:hover a {
+  background-color: #0768a9;
+  color: white;
+  border-radius: 5px 5px 0 0;
+  text-shadow: black 0 1px;
 }
-
-
 
 
 /*Main*/
 
 
-
 /*Footer*/
 .footer {
   background-color: #757575;
+}
+
+
+/*Clearfix*/
+.clearfix:after {
+  content: " ";
+  display: block;
+  clear: both;
 }
