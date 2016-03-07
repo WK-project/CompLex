@@ -98,13 +98,13 @@ body {
   width: 0;
   height: 0;
   border-style: solid;
-  border-width: 7px 0 7px 9px;
+  border-width: 6px 0 6px 8px;
   border-color: transparent transparent transparent #0768a9;
   content: "";
   display: block;
   position: absolute;
   left: 61px;
-  top: 5px;
+  top: 6px;
 }
 
 .search_box .field {
@@ -144,6 +144,7 @@ body {
 .header .navigation {
   margin-top: 20px;
   height: 25px;
+  margin-bottom: -1px;
 }
 
 .header .navigation .other {
@@ -173,16 +174,23 @@ body {
 
 .navigation .menu {
   padding-left: 40px;
-}
-
-.navigation .menu li {
-  padding-right: 15px;
   float: left;
 }
 
-.navigation .menu li a {
+.navigation .menu li {
+  position: relative;
+  float: left;
+}
+
+.navigation .menu li:hover {
+  background-color: #0768a9;
+  border-radius: 5px 5px 0 0;
+}
+
+
+.navigation .menu a {
   font-family: 'Trebuchet MS', sans-serif;
-  font-size: 14px;
+  font-size: 12px;
   text-decoration: none;
   color: #757575;
   padding: 5px 10px;
@@ -190,13 +198,70 @@ body {
   display: block;
 }
 
-.navigation .menu li:hover a {
-  background-color: #0768a9;
+.navigation .menu a:hover {
   color: white;
-  border-radius: 5px 5px 0 0;
   text-shadow: black 0 1px;
 }
 
+
+.navigation .menu .sub-menu {
+  display: none;
+  position: absolute;
+  background: #fff;
+  top: 100%;
+  left: 0;
+  z-index: 100;
+  border-top: 1px solid #0768a9;
+  border-bottom: 5px solid #0768a9;
+  padding-top: 5px;
+}
+
+.navigation .menu .sub-menu::after {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 6px 5px 0 5px;
+  border-color: #0768a9 transparent transparent transparent;
+  content: "";
+  display: block;
+  position: absolute;
+  left: 25px;
+  top: 0;
+}
+
+.navigation .menu .sub-menus-1 {
+  width: 180px;
+}
+
+.navigation .menu li:hover > ul {
+  display: block;
+}
+
+.navigation .menu .sub-menu li {
+  float: none;
+  display: list-item;
+  position: relative;
+  border-bottom: 1px solid #e4e4e4;
+}
+
+.navigation .menu .sub-menu li:last-child {
+  border-bottom: none;
+}
+
+.navigation .menu .sub-menu li:hover {
+  background: none;
+}
+
+.navigation .menu .sub-menu a {
+  text-transform: none;
+  font-family: 'Ariel', sans-serif;
+  font-size: 12px;
+}
+
+.navigation .menu .sub-menu a:hover {
+  text-shadow: none;
+  color: #0768a9;
+}
 
 /*Main*/
 
