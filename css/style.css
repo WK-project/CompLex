@@ -231,6 +231,7 @@ body {
 
 .navigation .menu .sub-menus-1 {
   width: 180px;
+  box-shadow: 0 10px 6px -6px #777;
 }
 
 .navigation .menu li:hover > ul {
