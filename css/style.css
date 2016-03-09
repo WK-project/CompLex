@@ -198,7 +198,7 @@ body {
   display: block;
 }
 
-.navigation .menu a:hover {
+.navigation .menu li:hover a {
   color: white;
   text-shadow: black 0 1px;
 }
@@ -253,14 +253,15 @@ body {
   background: none;
 }
 
-.navigation .menu .sub-menu a {
+.navigation .menu .sub-menu li a {
   text-transform: none;
   font-family: 'Ariel', sans-serif;
   font-size: 12px;
+  text-shadow: none;
+  color: #757575;
 }
 
 .navigation .menu .sub-menu a:hover {
-  text-shadow: none;
   color: #0768a9;
 }
 
