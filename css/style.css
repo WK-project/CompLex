@@ -37,10 +37,6 @@ body {
   padding: 0;
 }
 
-/*.header ul li {
-  display: inline-block;
-}*/
-
 .header .search_box {
   position: absolute;
   right: 0;
@@ -266,6 +262,89 @@ body {
 }
 
 /*Main*/
+
+
+main button {
+  background: #b9b9b9;
+  color: #fff;
+  border: 0;
+  border-radius: 3px;
+  padding: 5px;
+}
+
+main button:hover {
+  background: #ee014c;
+}
+
+main button .fa-chevron-circle-right {
+  padding-left: 5px;
+}
+
+.three_box div {
+  float: left;
+  height: 280px;
+  width: 300px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.three_box div:last-child {
+  margin-right: 0;
+}
+
+.three_box figure {
+  margin: 0;
+  padding: 0;
+}
+
+.three_box figure img {
+  box-shadow: 0 10px 6px -6px #777;
+  width: 255px;
+}
+
+.three_box .box {
+  background: #fff;
+  padding: 10px 20px 20px;
+}
+
+.three_box .blue {
+  border: 1px solid #0768a9;
+  border-top: 5px solid #0768a9;
+}
+
+.three_box .green {
+  border: 1px solid #6ebb1f;
+  border-top: 5px solid #6ebb1f;
+}
+
+.three_box .red {
+  border: 1px solid #ee014c;
+  border-top: 5px solid #ee014c;
+}
+
+.three_box .blue h1,
+.three_box .green h1,
+.three_box .red h1 {
+  margin-top: 0;
+  font-family: 'Trebuchet MS', sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.three_box .blue h1 {
+  color: #0768a9;
+}
+
+.three_box .green h1 {
+  color: #6ebb1f;
+}
+
+.three_box .red h1 {
+  color: #ee014c;
+}
+
+
+
 
 
 /*Footer*/
