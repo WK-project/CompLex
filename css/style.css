@@ -353,6 +353,105 @@ main button .fa-chevron-circle-right {
 }
 
 
+
+.footer h1 {
+  font-family: 'Trebuchet MS', sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.footer .top_box {
+  background-color: #fff;
+}
+
+.footer .bottom_box {
+  color: #fff;
+}
+
+.bottom_box .boxes div {
+  float: left;
+  width: 300px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.bottom_box .boxes div:last-child {
+  margin-right: 0;
+}
+
+.footer .box ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer .box ul li {
+  line-height: 20px;
+}
+
+.footer .box ul li a {
+  color: #b9b9b9;
+  text-decoration: none;
+}
+
+.footer .box ul li a:hover {
+  color: #fff;
+}
+
+.footer .box button {
+  background: #474747;
+  color: #fff;
+  border: 0;
+  border-radius: 3px;
+  padding: 5px;
+}
+
+.footer .box button:hover {
+  background: #ee014c;
+}
+
+.footer .box .fa-chevron-circle-right {
+  padding-left: 5px;
+}
+
+.footer nav .links {
+  float: right;
+}
+
+.footer nav .links li {
+  display: inline;
+}
+
+.links li a {
+  text-decoration: none;
+  color: #fff;
+  margin-left: 15px;
+}
+
+.links li a:hover {
+  color: #b9b9b9;
+}
+
+.links li a::after {
+  content: "\007C";
+  color: #fff;
+  margin-left: 15px;
+}
+
+.links li:last-child a::after {
+  content: "";
+  margin-left: 0;
+}
+
+.footer .copyright {
+  float: left;
+}
+
+.footer .copyright:before {
+  content: "\00A9"
+}
+
+
+
 /*Clearfix*/
 .clearfix:after {
   content: " ";
