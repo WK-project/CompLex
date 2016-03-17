@@ -158,10 +158,45 @@
   <footer class="footer clearfix">
     <section class="top_box">
       <div class="wrapper">
-        Kövessen minket, Iso, Superbrands, Hírleveleink
+        <article class="boxes">
+          <div class="box">
+            <div class="social">
+              <button class="social-media">
+                <i class="fa fa-facebook fa-2x"></i>
+              </button>
+              <button class="social-media">
+                <i class="fa fa-twitter fa-2x"></i>
+              </button>
+              <button class="social-media">
+                <i class="fa fa-linkedin fa-2x"></i>
+              </button>
+            </div>
+              <p class="address">
+                1117 Budapest, Prielle Kornélia utca 21-35. | <a href="https://www.google.com/maps?ll=47.46827,19.049376&z=15&t=m&hl=hu&gl=US&mapclient=embed&q=Prielle+Korn%C3%A9lia+u.+35+Budapest+1117+Magyarorsz%C3%A1g" target="_blank">térkép</a><br>
+                Tel: (40) 464-564 | +36 (1) 464-5656 | Fax: +36 (1) 464-5657 <br>
+                <a href="mailto:info@complex.hu">info@complex.hu</a>
+              </p>
+          </div>
+          <div class="box">
+            <ul class="brands">
+              <li><img src="images/9001.png" alt="ISO 9001"></li>
+              <li><img src="images/27001.png" alt="Certop"></li>
+              <li><img src="images/Superbrands.png" alt="Superbrands"></li>
+            </ul>
+          </div>
+          <div class="box grey">
+            <h1>Hírlevelek</h1>
+            <form method="post" action="index.html" enctype="multipart/form-data" class="newsletters">
+              <fieldset>
+                  <input type="text" name="name" placeholder="Név">
+                  <input type="email" name="email" placeholder="E-mail cím">
+              </fieldset>
+            </form>
+          </div>
+        </article>
       </div>
     </section>
-    <section class="bottom_box">
+    <section class="bottom_box left-cleared">
       <div class="wrapper">
         <article class="boxes">
           <div class="box">
@@ -234,7 +269,7 @@
               </li>
             </ul>
           </div>
-          <div class="box">
+          <div class="box grey2">
             <form method="post" action="index.html" enctype="multipart/form-data" class="newsletters">
               <button>
                 Feliratkozás<i class="fa fa-chevron-circle-right"></i>
@@ -242,105 +277,99 @@
               <fieldset>
                 <label class="accept">
                   <input type="checkbox" name="accept" value="yes">
-                  <span>Elfogadom a CompLex Kiadó <a href="#">adatvédelmi nyilatkozatát</a>.</span>
+                  <span>Elfogadom a CompLex Kiadó <br><a href="#" class="data">adatvédelmi nyilatkozatát</a>.</span>
                 </label>
                 <p>
                   Most hírlevél feliratkozás mellé ingyenes szakmai anyagot biztosítunk!
                 </p>
                 <ul>
                   <li>
-                    <label class="checkbox_group">
-                      <input type="checkbox" name="newsletter" value="Adó Online">
+                    <label for="AdoOnline" class="checkbox_group">
+                      <input type="checkbox" name="newsletter" id="AdoOnline" value="Adó Online">
                       <span>Adó Online Hírlevél</span>
                     </label>
                   </li>
                   <li>
-                    <label class="checkbox_group">
-                      <input type="checkbox" name="newsletter" value="Építésügyi">
+                    <label for="Epitesugyi"class="checkbox_group">
+                      <input type="checkbox" name="newsletter" id="Epitesugyi"value="Építésügyi">
                       <span>CompLex Építésügyi hírlevél</span>
                     </label>
                   </li>
                   <li>
-                    <label class="checkbox_group">
-                      <input type="checkbox" name="newsletter" value="HÉ">
+                    <label for="HE"class="checkbox_group">
+                      <input type="checkbox" name="newsletter" id="HE" value="HÉ">
                       <span>CompLex HÉ hírlevél</span>
                     </label>
                   </li>
                   <li>
-                    <label class="checkbox_group">
-                      <input type="checkbox" name="newsletter" value="Magazin">
+                    <label for="Magazin" class="checkbox_group">
+                      <input type="checkbox" name="newsletter" id="Magazin" value="Magazin">
                       <span>CompLex Magazin hírlevél</span>
                     </label>
                   </li>
                   <li>
-                    <label class="checkbox_group">
-                      <input type="checkbox" name="newsletter" value="MK">
+                    <label for="MK" class="checkbox_group">
+                      <input type="checkbox" name="newsletter" id="MK" value="MK">
                       <span>CompLex MK hírlevél</span>
                     </label>
                   </li>
                   <li>
-                    <label class="checkbox_group">
-                      <input type="checkbox" name="newsletter" value="Szakképzés">
+                    <label for="Szakkepzes" class="checkbox_group">
+                      <input type="checkbox" name="newsletter" id="Szakkepzes" value="Szakképzés">
                       <span>CompLex Szakképzés hírlevél</span>
                     </label>
                   </li>
                   <li>
-                    <label class="checkbox_group">
-                      <input type="checkbox" name="newsletter" value="Tárcaalap">
+                    <label for="Tarcaalap" class="checkbox_group">
+                      <input type="checkbox" name="newsletter" id="Tarcaalap" value="Tárcaalap">
                       <span>CompLex Tárcaalap hírlevél</span>
                     </label>
                   </li>
                   <li>
-                    <label class="checkbox_group">
-                      <input type="checkbox" name="newsletter" value="EU">
+                    <label for="EU" class="checkbox_group">
+                      <input type="checkbox" name="newsletter" id="EU" value="EU">
                       <span>CompLex EU hírlevél</span>
                     </label>
                   </li>
                   <li>
-                    <label class="checkbox_group">
-                      <input type="checkbox" name="newsletter" value="Egészségügy">
+                    <label for="Egeszsegugy" class="checkbox_group">
+                      <input type="checkbox" name="newsletter" id="Egeszsegugy"value="Egészségügy">
                       <span>Egészségügy hírlevél</span>
                     </label>
                   </li>
                   <li>
-                    <label class="checkbox_group">
-                      <input type="checkbox" name="newsletter" value="Csőd">
+                    <label for="Csod" class="checkbox_group">
+                      <input type="checkbox" name="newsletter" id="Csod" value="Csőd">
                       <span>Felszámolás és csődértesítő</span>
                     </label>
                   </li>
                   <li>
-                    <label class="checkbox_group">
-                      <input type="checkbox" name="newsletter" value="EU">
-                      <span>CompLex EU hírlevél</span>
-                    </label>
-                  </li>
-                  <li>
-                    <label class="checkbox_group">
-                      <input type="checkbox" name="newsletter" value="Jogtár">
+                    <label for="Jogtar" class="checkbox_group">
+                      <input type="checkbox" name="newsletter" id="Jogtar" value="Jogtár">
                       <span>Jogtárhírlevél</span>
                     </label>
                   </li>
                   <li>
-                    <label class="checkbox_group">
-                      <input type="checkbox" name="newsletter" value="Környezetvédelem">
+                    <label for="Kornyezet" class="checkbox_group">
+                      <input type="checkbox" name="newsletter" id="Kornyezet"value="Környezetvédelem">
                       <span>Környezetvédelem-Munkavédelem hírlevél</span>
                     </label>
                   </li>
                   <li>
-                    <label class="checkbox_group">
-                      <input type="checkbox" name="newsletter" value="Közoktatás">
+                    <label for="Kozoktatas"class="checkbox_group">
+                      <input type="checkbox" name="newsletter" id="Kozoktatas" value="Közoktatás">
                       <span>KÖZoktatás hírlevél</span>
                     </label>
                   </li>
                   <li>
-                    <label class="checkbox_group">
-                      <input type="checkbox" name="newsletter" value="Munkajog">
+                    <label for="Munkajog"class="checkbox_group">
+                      <input type="checkbox" name="newsletter" id="Munkajog" value="Munkajog">
                       <span>Munkajog hírlevél</span>
                     </label>
                   </li>
                   <li>
-                    <label class="checkbox_group">
-                      <input type="checkbox" name="newsletter" value="Rodin">
+                    <label for="Rodin" class="checkbox_group">
+                      <input type="checkbox" name="newsletter" id="Rodin" value="Rodin">
                       <span>RODIN TB-Bér hírlevél</span>
                     </label>
                   </li>

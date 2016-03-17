@@ -343,16 +343,10 @@ main button .fa-chevron-circle-right {
   color: #ee014c;
 }
 
-
-
-
-
 /*Footer*/
 .footer {
   background-color: #757575;
 }
-
-
 
 .footer h1 {
   font-family: 'Trebuchet MS', sans-serif;
@@ -361,30 +355,148 @@ main button .fa-chevron-circle-right {
 }
 
 .footer .top_box {
+  background: #fff;
+  height: 108px;
+}
+
+.top_box .boxes div,
+.bottom_box .boxes div {
+  float: left;
+  width: 300px;
+  margin-right: 20px;
+}
+.top_box .boxes div:last-child,
+.bottom_box .boxes div:last-child {
+  margin-right: 0;
+}
+
+.top_box .social {
+  margin: 10px 0;
+}
+
+.top_box .social-media {
+  margin-right: 8px;
+}
+
+.top_box .social button {
   background-color: #fff;
+  border: 0;
+  border-radius: 5px;
+  box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.3);
+  color: #b9b9b9;
+  padding: 5px;
+  width: 33px;
+}
+
+.top_box .social button:hover {
+  background-color: #0768a9;
+  border: 0;
+  border-radius: 5px;
+  /*box-shadow: 0px 0px 6px 0px rgba(7,104,169,0.5);*/
+  color: #fff;
+}
+
+.top_box .box ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.top_box .address li {
+  display: inline;
+}
+
+.top_box .address {
+  font-size: 11px;
+  color: #757575;
+  line-height: 15px;
+  margin-bottom: 0;
+}
+
+.top_box .address a {
+  text-decoration: none;
+  color: #0768a9;
+}
+
+.top_box .address a:hover {
+  text-decoration: underline;
+}
+
+.brands li {
+  display: inline-block;
+  vertical-align: middle;
+  padding-left: 8px;
+  padding-top: 8px;
+}
+
+.top_box .grey {
+  background: #757575;
+  padding: 10px 20px 0;
+  height: 108px;
+}
+
+.top_box .grey h1 {
+  color: #fff;
+  margin-top: 0;
+}
+
+.top_box .grey fieldset,
+.bottom_box .grey2 fieldset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.top_box .grey fieldset input {
+  border: 0;
+  height: 24px;
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 0 10px;
+  font-style: italic;
 }
 
 .footer .bottom_box {
   color: #fff;
 }
 
-.bottom_box .boxes div {
-  float: left;
-  width: 300px;
-  margin-right: 20px;
-  margin-bottom: 20px;
+.bottom_box .grey2 {
+  padding: 0 20px;
 }
 
-.bottom_box .boxes div:last-child {
-  margin-right: 0;
+.bottom_box .grey2 fieldset {
+  margin-top: 10px;
+  height: 405px;
+  color: #b9b9b9;
 }
 
-.footer .box ul {
+.bottom_box .grey2 fieldset label:hover {
+  color: #fff;
+}
+
+.bottom_box .grey2 fieldset input {
+  vertical-align: text-top;
+}
+
+.bottom_box .grey2 fieldset a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.bottom_box .grey2 fieldset a:hover {
+  text-decoration: underline;
+}
+
+.bottom_box .grey2 fieldset a.data {
+  padding-left: 18px;
+}
+
+.bottom_box .box ul {
   list-style: none;
   padding-left: 0;
+  margin-bottom: 40px;
 }
 
-.footer .box ul li {
+.bottom_box .box ul li {
   line-height: 20px;
 }
 
@@ -397,7 +509,7 @@ main button .fa-chevron-circle-right {
   color: #fff;
 }
 
-.footer .box button {
+.footer .bottom_box button {
   background: #474747;
   color: #fff;
   border: 0;
@@ -405,11 +517,11 @@ main button .fa-chevron-circle-right {
   padding: 5px;
 }
 
-.footer .box button:hover {
+.footer .bottom_box button:hover {
   background: #ee014c;
 }
 
-.footer .box .fa-chevron-circle-right {
+.footer .bottom_box .fa-chevron-circle-right {
   padding-left: 5px;
 }
 
@@ -450,7 +562,9 @@ main button .fa-chevron-circle-right {
   content: "\00A9"
 }
 
-
+.left-cleared {
+  clear: left;
+}
 
 /*Clearfix*/
 .clearfix:after {
