@@ -262,7 +262,45 @@ body {
 }
 
 /*Main*/
+main .slides .slide-1 {
+  background-color: #d5dbe7;
+  height: 380px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
 
+.slides .slide-1 .content {
+  padding-left: 50px;
+  float: left;
+  width: 620px
+}
+
+.slides .slide-1 .content h1 {
+  font-family: 'Trebuchet MS', sans-serif;
+  font-size: 36px;
+  font-weight: normal;
+  margin-top: 0;
+}
+
+.slides .slide-1 .content h2 {
+  background: #061844;
+  color: #fff;
+  display: inline;
+  font-size: 14px;
+  font-weight: normal;
+  text-transform: uppercase;
+  padding: 5px;
+}
+
+.slides .content-img {
+  float: left;
+  padding-left: 30px;
+}
+
+.slides .content-img figure {
+  margin: 0;
+  padding: 0;
+}
 
 main button {
   background: #b9b9b9;
