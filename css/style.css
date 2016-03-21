@@ -302,6 +302,108 @@ main .slides .slide-1 {
   padding: 0;
 }
 
+.areas .brand {
+  background: #0768a9;
+  height: 50px;
+}
+
+.areas .brand ul {
+ list-style: none;
+ margin: 0;
+ padding-left: 50px;
+ padding-top: 7px;
+}
+
+.areas .brand ul li {
+  float: left;
+  margin-right: 100px;
+}
+
+.areas .brand .jogtar {
+  background: url(../images/marka_Jogtar_inaktiv.svg);
+  display: inline-block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  text-indent: 110%;
+  white-space: nowrap;
+  height: 33px;
+  width: 125px;
+}
+
+.areas .brand .jogtar:hover {
+  background: url(../images/marka_Jogtar.svg);
+  display: inline-block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 33px;
+  width: 125px;
+}
+
+.areas .brand .ceginfo {
+  background: url(../images/marka_Ceginfo_inaktiv.svg);
+  display: inline-block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  text-indent: 110%;
+  white-space: nowrap;
+  margin-top: 7px;
+  height: 33px;
+  width: 125px;
+}
+
+.areas .brand .ceginfo:hover {
+  background: url(../images/marka_Ceginfo.svg);
+  display: inline-block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 33px;
+  width: 125px;
+}
+
+.areas .brand .adoonline {
+  background: url(../images/marka_AdoOnline_inaktiv.svg);
+  display: inline-block;
+  background-size: contain;;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  text-indent: 110%;
+  white-space: nowrap;
+  height: 33px;
+  width: 110px;
+}
+
+.areas .brand .adoonline:hover {
+  background: url(../images/marka_AdoOnline.svg);
+  display: inline-block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 33px;
+  width: 110px;
+}
+
+.areas .brand .rodin {
+  background: url(../images/marka_Rodin_inaktiv.svg);
+  display: inline-block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  text-indent: 110%;
+  white-space: nowrap;
+  height: 33px;
+  width: 125px;
+}
+
+.areas .brand .rodin:hover {
+  background: url(../images/marka_Rodin.svg);
+  display: inline-block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 33px;
+  width: 125px;
+}
+
 main button {
   background: #b9b9b9;
   color: #fff;
@@ -318,12 +420,16 @@ main button .fa-chevron-circle-right {
   padding-left: 5px;
 }
 
+.boxes .three_box {
+  margin: 20px 0;
+  height: 280px;
+}
+
 .three_box div {
   float: left;
   height: 280px;
   width: 300px;
   margin-right: 20px;
-  margin-bottom: 20px;
 }
 
 .three_box div:last-child {
@@ -459,7 +565,7 @@ main button .fa-chevron-circle-right {
   text-decoration: underline;
 }
 
-.brands li {
+.iso li {
   display: inline-block;
   vertical-align: middle;
   padding-left: 8px;
