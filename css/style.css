@@ -404,6 +404,20 @@ main .slides .slide-1 {
   width: 125px;
 }
 
+.areas .brand-content {
+  background: #fff;
+}
+
+.areas .brand-content h1 {
+  font-size: 24px;
+  font-weight: normal;
+  font-family: 'Trebuchet MS', sans-serif;
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+
 main button {
   background: #b9b9b9;
   color: #fff;
