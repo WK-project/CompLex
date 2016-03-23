@@ -140,7 +140,7 @@ body {
 .header .navigation {
   margin-top: 20px;
   height: 25px;
-  margin-bottom: -1px;
+  /*margin-bottom: -1px;*/
 }
 
 .header .navigation .other {
@@ -181,8 +181,8 @@ body {
 .navigation .menu li:hover {
   background-color: #0768a9;
   border-radius: 5px 5px 0 0;
+  border-bottom: 1px solid #0768a9;
 }
-
 
 .navigation .menu a {
   font-family: 'Trebuchet MS', sans-serif;
@@ -199,12 +199,11 @@ body {
   text-shadow: black 0 1px;
 }
 
-
 .navigation .menu .sub-menu {
   display: none;
   position: absolute;
   background: #fff;
-  top: 100%;
+  top: 25px; /*100% volt beállítva, de az explorerben nem volt jó*/
   left: 0;
   z-index: 100;
   border-top: 1px solid #0768a9;
@@ -280,16 +279,18 @@ main .slides .slide-1 {
   font-size: 36px;
   font-weight: normal;
   margin-top: 0;
+  margin-bottom: 15px;
 }
 
 .slides .slide-1 .content h2 {
   background: #061844;
   color: #fff;
-  display: inline;
+  display: inline-block;
   font-size: 14px;
   font-weight: normal;
   text-transform: uppercase;
   padding: 5px;
+  margin: 0;
 }
 
 .slides .content-img {
@@ -365,7 +366,7 @@ main .slides .slide-1 {
 .areas .brand .adoonline {
   background: url(../images/marka_AdoOnline_inaktiv.svg);
   display: inline-block;
-  background-size: contain;;
+  background-size: contain;
   background-repeat: no-repeat;
   overflow: hidden;
   text-indent: 110%;
@@ -406,6 +407,7 @@ main .slides .slide-1 {
 
 .areas .brand-content {
   background: #fff;
+  height: 255px;
 }
 
 .areas .brand-content h1 {
@@ -417,6 +419,42 @@ main .slides .slide-1 {
   padding-bottom: 20px;
 }
 
+.areas .brand-dropdown div {
+  float: left;
+  width: 300px;
+  margin-right: 20px;
+}
+
+.brand-dropdown div:last-child {
+  margin-right: 0;
+}
+
+.brand-dropdown .box ul {
+  padding-left: 0;
+  margin: 0;
+  list-style-type: square;
+  list-style-position: inside;
+}
+
+.brand-dropdown .box ul li {
+  border-bottom: 1px solid #f2f2f2;
+  padding: 8px 0;
+}
+
+
+.brand-dropdown figure {
+  margin: 0;
+  padding: 0;
+}
+
+.brand-dropdown figure img {
+  position: absolute;
+  top: 50px;
+}
+
+main p {
+  margin: 20px 0 0;
+}
 
 main button {
   background: #b9b9b9;
@@ -424,6 +462,7 @@ main button {
   border: 0;
   border-radius: 3px;
   padding: 5px;
+  margin-top: 20px;
 }
 
 main button:hover {
@@ -436,12 +475,12 @@ main button .fa-chevron-circle-right {
 
 .boxes .three_box {
   margin: 20px 0;
-  height: 280px;
+  height: 300px;
 }
 
 .three_box div {
   float: left;
-  height: 280px;
+  height: 300px;
   width: 300px;
   margin-right: 20px;
 }
