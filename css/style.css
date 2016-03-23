@@ -268,13 +268,40 @@ main .slides .slide-1 {
   padding-bottom: 20px;
 }
 
-.slides .slide-1 .content {
+main .slides .slide-2 {
+  background-color: #e9f5de;
+  height: 380px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+main .slides .slide-3 {
+  background-color: #dae8f2;
+  height: 380px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+main .slides .slide-4 {
+  background-color: #e4e4e4;
+  height: 380px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.slides .slide-1 .content,
+.slides .slide-2 .content,
+.slides .slide-3 .content,
+.slides .slide-4 .content {
   padding-left: 50px;
   float: left;
   width: 620px
 }
 
-.slides .slide-1 .content h1 {
+.slides .slide-1 .content h1,
+.slides .slide-2 .content h1,
+.slides .slide-3 .content h1,
+.slides .slide-4 .content h1 {
   font-family: 'Trebuchet MS', sans-serif;
   font-size: 36px;
   font-weight: normal;
@@ -284,6 +311,39 @@ main .slides .slide-1 {
 
 .slides .slide-1 .content h2 {
   background: #061844;
+  color: #fff;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: normal;
+  text-transform: uppercase;
+  padding: 5px;
+  margin: 0;
+}
+
+.slides .slide-2 .content h2 {
+  background: #6ebb1f;
+  color: #fff;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: normal;
+  text-transform: uppercase;
+  padding: 5px;
+  margin: 0;
+}
+
+.slides .slide-3 .content h2 {
+  background: #0768a9;
+  color: #fff;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: normal;
+  text-transform: uppercase;
+  padding: 5px;
+  margin: 0;
+}
+
+.slides .slide-4 .content h2 {
+  background: #474747;
   color: #fff;
   display: inline-block;
   font-size: 14px;
