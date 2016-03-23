@@ -6,6 +6,7 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link href="css/style.css" rel="stylesheet">
+  <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
 </head>
 <body>
   <header class="header clearfix">
@@ -223,23 +224,23 @@
         <div class="wrapper">
           <ul class="brands">
             <li>
-              <a href="#" class="jogtar">Jogtár</a>
+              <a href="javascript:;" class="jogtar">Jogtár</a>
             </li>
             <li>
-              <a href="#" class="ceginfo">Céginfó</a>
+              <a href="javascript:;" class="ceginfo">Céginfó</a>
             </li>
             <li>
-              <a href="#" class="adoonline">AdóOnline</a>
+              <a href="javascript:;" class="adoonline">AdóOnline</a>
             </li>
             <li>
-              <a href="#" class="rodin">Rodin</a>
+              <a href="javascript:;" class="rodin">Rodin</a>
             </li>
           </ul>
         </div>
       </div>
       <div class="brand-content">
-        <div class="wrapper">
-          <div class="brand-dropdown">
+        <div class="wrapper" id="brand-wrapper">
+          <div class="brand-dropdown" id="dropdown-1">
             <h1><strong>JOGTÁR<sup>&reg;</sup></strong> - CompLex megoldást kínálunk!</h1>
             <article class="jogtar-content">
               <div class="box">
@@ -556,5 +557,8 @@
       </div>
     </section>
   </footer>
+
+  <script type="text/javascript" src="script/main.js"></script>
+
 </body>
 </html>

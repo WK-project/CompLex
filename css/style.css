@@ -467,8 +467,19 @@ main .slides .slide-4 {
 
 .areas .brand-content {
   background: #fff;
-  height: 255px;
+  /*height: 255px;*/
 }
+
+.brand-content #brand-wrapper {
+  overflow: hidden;
+  height: 100px;
+}
+
+.brand-content #dropdown-1 {
+  position: absolute;
+  top: -200px;
+}
+
 
 .areas .brand-content h1 {
   font-size: 24px;
