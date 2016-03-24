@@ -527,6 +527,15 @@ main p {
   margin: 20px 0 0;
 }
 
+main p a {
+  color: #ee014c;
+  text-decoration: none;
+}
+
+main p a:hover {
+  text-decoration: underline;
+}
+
 main button {
   background: #b9b9b9;
   color: #fff;
