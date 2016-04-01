@@ -620,6 +620,74 @@ main button .fa-chevron-circle-right {
   color: #ee014c;
 }
 
+.three_box .red ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.three_box .red ul li {
+  margin-bottom: 10px;
+}
+
+.three_box .red .date {
+  float: left;
+  height: 55px;
+  width: 55px;
+}
+
+.three_box .red .date h4 {
+  background: #ee014c;
+  color: #fff;
+  font-size: 9px;
+  line-height: 17px;
+  height: 17px;
+  text-align: center;
+  text-shadow: black 0 1px;
+  margin: 0;
+}
+
+.three_box .red .date h5 {
+  background: linear-gradient(to top, #e4e4e4 0%, #fff 100%);
+  border-radius: 0 0 5px 5px;
+  color: #000;
+  font-size: 30px;
+  font-weight: normal;
+  line-height: 38px;
+  height: 38px;
+  text-align: center;
+  margin: 0;
+}
+
+.three_box .red .date-content {
+  margin-left: 75px;
+  border-bottom: 1px solid #e4e4e4;
+}
+
+.three_box .red li:last-child .date-content {
+  border-bottom: none;
+}
+
+.three_box .red .date-content h3 {
+  margin: 0 0 7px;
+}
+
+.three_box .red .date-content h3 a {
+  color: #474747;
+  font-size: 12px;
+  font-weight: bold;
+  margin: 5px 0 0;
+  text-decoration: none;
+}
+
+.three_box .red .date-content h3 a:hover {
+  color: #ee014c;
+}
+
+.three_box .red .date-content p {
+  margin: 0 0 10px;
+}
+
 /*Footer*/
 .footer {
   background-color: #757575;
