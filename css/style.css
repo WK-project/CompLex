@@ -113,6 +113,9 @@ body {
   width: 185px
 }
 
+.search_box .field:focus {
+  outline: 0;
+}
 
 .search_box button {
   background-color: #dae8f2;
@@ -123,6 +126,10 @@ body {
 
 .search_box button:hover {
   color: #0768a9;
+}
+
+.search_box button:focus {
+  outline: 0;
 }
 
 .logo h1 {
@@ -266,6 +273,7 @@ main .slides .slide-1 {
   height: 380px;
   padding-top: 20px;
   padding-bottom: 20px;
+  position: relative;
 }
 
 main .slides .slide-2 {
@@ -361,6 +369,46 @@ main .slides .slide-4 {
 .slides .content-img figure {
   margin: 0;
   padding: 0;
+}
+
+.slides .nav-buttons .left {
+  position: absolute;
+  left: 0;
+  top: 40%;
+  background: none;
+  color: #b9b9b9;
+  margin-top: 0;
+}
+
+.slides .nav-buttons .left:hover {
+  color: #ee014c;
+}
+
+.slides .nav-buttons .right {
+  position: absolute;
+  right: 0;
+  top: 40%;
+  background: none;
+  color: #b9b9b9;
+  margin-top: 0;
+}
+
+.slides .nav-buttons .right:hover {
+  color: #ee014c;
+}
+
+.slides .slide-buttons {
+  text-align: center;
+}
+
+.slides .slide-buttons button {
+  background: none;
+  margin-top: 0;
+  color: #b9b9b9;
+}
+
+.slides .slide-buttons button:hover {
+  color: #ee014c;
 }
 
 .areas .brand {
@@ -551,6 +599,10 @@ main button:hover {
 
 main button .fa-chevron-circle-right {
   padding-left: 5px;
+}
+
+main button:focus {
+  outline: 0;
 }
 
 .boxes .three_box {
