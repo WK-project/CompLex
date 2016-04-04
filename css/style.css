@@ -520,14 +520,17 @@ main .slides .slide-4 {
 
 .brand-content #brand-wrapper {
   overflow: hidden;
-  height: 100px;
 }
 
 .brand-content #dropdown-1 {
   position: absolute;
-  top: -200px;
+  top: -255px;
 }
 
+.brand-content #dropdown-4 {
+  position: absolute;
+  top: -255px;
+}
 
 .areas .brand-content h1 {
   font-size: 24px;
@@ -546,6 +549,18 @@ main .slides .slide-4 {
 
 .brand-dropdown div:last-child {
   margin-right: 0;
+}
+
+.brand-dropdown div.box2 {
+  width: 600px;
+}
+
+.brand-dropdown div.box2 p:first-child {
+  margin-top: 0px;
+}
+
+.brand-dropdown div.box2 .rodin {
+  margin-left: 190px;
 }
 
 .brand-dropdown .box ul {
@@ -570,6 +585,13 @@ main .slides .slide-4 {
   position: absolute;
   top: 50px;
 }
+
+#dropdown-4 figure img {
+  position: absolute;
+  top: 20px;
+}
+
+
 
 main p {
   margin: 20px 0 0;
