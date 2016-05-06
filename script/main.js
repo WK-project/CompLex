@@ -1,3 +1,64 @@
+/***********
+// Slides //
+***********/
+
+var activeSlide = 1; //aktiv slide
+$('#button-' + activeSlide).css('color', '#ee014c'); // elso button piros színezi
+
+function MoveSlide(slideId)	{ // aktív slideot eltuntni, megadott slidet megjeleniti, illetve also buttonokat is allitja
+	$('.slides .slide-' + activeSlide).fadeOut(1000);
+	$('#button-' + activeSlide).css('color', '#b9b9b9');
+	activeSlide = slideId;
+	$('.slides .slide-' + activeSlide).fadeIn(1000);
+	$('#button-' + activeSlide).css('color', '#ee014c');
+}
+
+function MoveSlideLeft()	{ // aktív slideot eltuntni, tole balra levot slidet megjeleniti, illetve also buttonokat is allitja
+	$('.slides .slide-' + activeSlide).fadeOut(1000);
+	$('#button-' + activeSlide).css('color', '#b9b9b9');
+	activeSlide--;
+	if (activeSlide == 0) activeSlide = 4;
+	$('.slides .slide-' + activeSlide).fadeIn(1000);
+	$('#button-' + activeSlide).css('color', '#ee014c');
+}
+
+function MoveSlideRight()	{
+	$('.slides .slide-' + activeSlide).fadeOut(1000);
+	$('#button-' + activeSlide).css('color', '#b9b9b9');
+	activeSlide++;
+	if (activeSlide == 5) activeSlide = 1;
+	$('.slides .slide-' + activeSlide).fadeIn();
+	$('#button-' + activeSlide).css('color', '#ee014c');
+}
+
+$('.nav-buttons .left').on('click', function () {
+	MoveSlideLeft();
+})
+
+$('.nav-buttons .right').on('click', function () {
+	MoveSlideRight();
+})
+
+
+// also gomb esemenykezelese
+$('#button-1').on('click', function () {
+	MoveSlide(1);
+})
+$('#button-2').on('click', function () {
+	MoveSlide(2);
+})
+$('#button-3').on('click', function () {
+	MoveSlide(3);
+})
+$('#button-4').on('click', function () {
+	MoveSlide(4);
+})
+
+
+/***********
+// DropDown //
+***********/
+
 
 var dropdownIsOpen = 0;
 var clickEnableds = [0,true,true,true,true];

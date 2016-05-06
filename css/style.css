@@ -268,33 +268,40 @@ body {
 }
 
 /*Main*/
-main .slides .slide-1 {
-  background-color: #d5dbe7;
+main section.slides {
+  height: 380px;
+  position: relative;
+}
+
+main .slides .slide-1,
+main .slides .slide-2,
+main .slides .slide-3,
+main .slides .slide-4 {
   height: 380px;
   padding-top: 20px;
   padding-bottom: 20px;
-  position: relative;
+  position: absolute;
+  width: 100%;
+}
+
+main .slides .slide-1 {
+  background-color: #d5dbe7;
+  display: block;
 }
 
 main .slides .slide-2 {
   background-color: #e9f5de;
-  height: 380px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+    display: none;
 }
 
 main .slides .slide-3 {
   background-color: #dae8f2;
-  height: 380px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  display: none;
 }
 
 main .slides .slide-4 {
   background-color: #e4e4e4;
-  height: 380px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  display: none;
 }
 
 .slides .slide-1 .content,
@@ -373,7 +380,7 @@ main .slides .slide-4 {
 
 .slides .nav-buttons .left {
   position: absolute;
-  left: 0;
+  left: 120px;
   top: 40%;
   background: none;
   color: #b9b9b9;
@@ -386,7 +393,7 @@ main .slides .slide-4 {
 
 .slides .nav-buttons .right {
   position: absolute;
-  right: 0;
+  right: 120px;
   top: 40%;
   background: none;
   color: #b9b9b9;
@@ -398,17 +405,16 @@ main .slides .slide-4 {
 }
 
 .slides .slide-buttons {
+  bottom: 0;
   text-align: center;
+  position: absolute;
+  width: 100%;
 }
 
 .slides .slide-buttons button {
   background: none;
   margin-top: 0;
   color: #b9b9b9;
-}
-
-.slides .slide-buttons button:hover {
-  color: #ee014c;
 }
 
 .areas .brand {
@@ -588,8 +594,6 @@ main .slides .slide-4 {
   position: absolute;
   top: 20px;
 }
-
-
 
 main p {
   margin: 20px 0 0;
