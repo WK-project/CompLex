@@ -1,56 +1,51 @@
-/*
+
 var dropdownIsOpen = 0;
 var clickEnableds = [0,true,true,true,true];
-var contentHeights = [0,255,200,200,255];		// nullást nem használjuk
+var contentHeights = [0,255,255,255,255];		// nullást nem használjuk
 
-
+// melyik brand mozogjon
 function Mover(dropdownId)	{
+	if (dropdownIsOpen == dropdownId)  { // sajat magat csukja be
+		$('.brand-content #brand-wrapper').animate({'height': 0}, 1000);
+		$('.brand-content #dropdown-' + dropdownIsOpen).animate({'top': -contentHeights[dropdownIsOpen]}, 1000, "swing");
+		dropdownIsOpen = 0;
+		clickEnableds[dropdownId] = true;
+		return;
+	}
 
+	if (dropdownIsOpen)  { // ha masik brand nyitva van, akkor masikat csukja be
+		$('.brand-content #brand-wrapper').animate({'height': 0}, 1000);
+		$('.brand-content #dropdown-' + dropdownIsOpen).animate({'top': -contentHeights[dropdownIsOpen]}, 1000, "swing", function () { Opener(dropdownId); })
+	} else { // senki nincs nyitva, akit kertek nyissa ki
+		Opener(dropdownId);
+	}
 }
-*/
 
+function Opener(dropdownId)	{ // megnyitja akit kertek
+	$('.brand-content #brand-wrapper').animate({'height': contentHeights[dropdownId]}, 1000);
+	$('.brand-content #dropdown-' + dropdownId).animate({'top': 0}, 1000, "swing");
+	dropdownIsOpen = dropdownId;
+	clickEnableds[dropdownIsOpen] = true;
+}
 
-var dropdownIsOpen1 = false;
-var clickEnabled1 = true;
-var dropdownIsOpen4 = false;
-var clickEnabled4 = true;
-
-
+// gomb esemenyek
 $('.brand .brands .jogtar').on('click', function () {
-	if (!clickEnabled1) return;
-	clickEnabled1 = false;
-	var contentHeight = 255;
-	if (dropdownIsOpen1) {
-		$('.brand-content #brand-wrapper').animate({'height': 0}, 1000);
-		$('.brand-content #dropdown-1').animate({'top': -contentHeight}, 1000, "swing", AnimationDone1);
-		dropdownIsOpen1 = false;
-	} else {
-		$('.brand-content #brand-wrapper').animate({'height': contentHeight}, 1000);
-		$('.brand-content #dropdown-1').animate({'top': 0}, 1000, "swing", AnimationDone1);
-		dropdownIsOpen1 = true;
-	}
+	if (!clickEnableds[1]) return;
+	clickEnableds[1] = false;
+	Mover(1);
 })
-
+$('.brand .brands .ceginfo').on('click', function () {
+	if (!clickEnableds[2]) return;
+	clickEnableds[2] = false;
+	Mover(2);
+})
+$('.brand .brands .adoonline').on('click', function () {
+	if (!clickEnableds[3]) return;
+	clickEnableds[3] = false;
+	Mover(3);
+})
 $('.brand .brands .rodin').on('click', function () {
-	if (!clickEnabled4) return;
-	clickEnabled4 = false;
-	var contentHeight = 255;
-	if (dropdownIsOpen4) {
-		$('.brand-content #brand-wrapper').animate({'height': 0}, 1000);
-		$('.brand-content #dropdown-4').animate({'top': -contentHeight}, 1000, "swing", AnimationDone4);
-		dropdownIsOpen4 = false;
-	} else {
-		$('.brand-content #brand-wrapper').animate({'height': contentHeight}, 1000);
-		$('.brand-content #dropdown-4').animate({'top': 0}, 1000, "swing", AnimationDone4);
-		dropdownIsOpen4 = true;
-	}
+	if (!clickEnableds[4]) return;
+	clickEnableds[4] = false;
+	Mover(4);
 })
-
-
-function AnimationDone1()	{
-	clickEnabled1 = true;
-}
-
-function AnimationDone4()	{
-	clickEnabled4 = true;
-}

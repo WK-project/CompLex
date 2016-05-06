@@ -522,11 +522,9 @@ main .slides .slide-4 {
   overflow: hidden;
 }
 
-.brand-content #dropdown-1 {
-  position: absolute;
-  top: -255px;
-}
-
+.brand-content #dropdown-1,
+.brand-content #dropdown-2,
+.brand-content #dropdown-3,
 .brand-content #dropdown-4 {
   position: absolute;
   top: -255px;
