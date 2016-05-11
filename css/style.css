@@ -231,9 +231,12 @@ body {
   top: 0;
 }
 
+.navigation .menu .sub-menus {
+  box-shadow: 0 10px 6px -6px #777;
+}
+
 .navigation .menu .sub-menus-1 {
   width: 180px;
-  box-shadow: 0 10px 6px -6px #777;
 }
 
 .navigation .menu li:hover > ul {
@@ -245,6 +248,8 @@ body {
   display: list-item;
   position: relative;
   border-bottom: 1px solid #e4e4e4;
+  white-space: nowrap;
+  width: 100%;
 }
 
 .navigation .menu .sub-menu li:last-child {
