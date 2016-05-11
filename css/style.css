@@ -594,9 +594,20 @@ main .slides .slide-4 {
   top: 50px;
 }
 
+#dropdown-2 figure img {
+  margin: 50px 0 0 15px;
+  width: 300px;
+}
+
+#dropdown-3 figure img {
+  margin: 40px 0 0 15px;
+  width: 285px;
+}
+
 #dropdown-4 figure img {
   position: absolute;
   top: 20px;
+  right: 0;
 }
 
 main p {
